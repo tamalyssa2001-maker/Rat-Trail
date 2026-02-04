@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Be My Valentine?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ff4d6d, #ff9a9e);
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+      max-width: 360px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 16px;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      margin: 8px;
+      transition: 0.2s ease;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .no {
+      background: #e5e7eb;
+      color: #111;
+    }
+
+    .no:hover {
+      transform: translateX(40px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Hey baby rat 🐀💕</h1>
+    <p>Tae, will you be my Valentine?</p>
+
+    <button class="yes" onclick="yes()">Yes 💘</button>
+    <button class="no" onclick="no()">No 💔</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.body.innerHTML = `
+        <div style="
+          height:100vh;
+          width:100%;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          gap:24px;
+          background:linear-gradient(135deg,#ff4d6d,#ff9a9e);
+          font-family:Arial, sans-serif;
+          color:white;
+          text-align:center;
+          padding:20px;
+        ">
+
+          <img
+            src="https://media.tenor.com/1YF6rK6yZ3cAAAAC/stitch-love.gif"
+            style="
+              width:95%;
+              max-width:520px;
+              border-radius:20px;
+              box-shadow:0 30px 60px rgba(0,0,0,0.35);
+            "
+          />
+
+          <h1 style="font-size:32px;"> Good choice 💖</h1>
+          <p style="font-size:20px;">
+            Guess you’re stuck with me now 😌💕
+          </p>
+        </div>
+      `;
+    }
+
+    function no() {
+      document.body.innerHTML = `
+        <div style="
+          height:100vh;
+          width:100%;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          gap:24px;
+          background:#0f172a;
+          font-family:Arial, sans-serif;
+          color:white;
+          text-align:center;
+          padding:20px;
+        ">
+
+          <img
+            src="https://media.tenor.com/QyYkQH5sZQAAAAAC/stitch-sad-rain.gif"
+            style="
+              width:95%;
+              max-width:520px;
+              border-radius:20px;
+              box-shadow:0 30px 60px rgba(0,0,0,0.5);
+            "
+          />
+
+          <h1 style="font-size:30px;">Oh… okay 💔</h1>
+          <p style="font-size:20px;">
+            Fuck nigga.
+          </p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
